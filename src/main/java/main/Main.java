@@ -22,6 +22,6 @@ public class Main {
     }
 
     private static Image image(){
-        return new FileImageLoader(new File("/pictures")).load();
+        return new FileImageLoader(new File("pictures")).load();
     }
 }
