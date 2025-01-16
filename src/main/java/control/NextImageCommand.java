@@ -1,5 +1,7 @@
 package control;
 
+import view.ImagePresenter;
+
 public class NextImageCommand implements Command {
     private final ImagePresenter imagePresenter;
 
