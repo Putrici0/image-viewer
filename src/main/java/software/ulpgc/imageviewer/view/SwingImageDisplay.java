@@ -1,8 +1,8 @@
-package view;
+package software.ulpgc.imageviewer.view;
 
-import model.Image;
-import utils.viewport.Viewport;
-import utils.viewport.Dimension;
+import software.ulpgc.imageviewer.model.Image;
+import software.ulpgc.imageviewer.utils.viewport.Viewport;
+import software.ulpgc.imageviewer.utils.viewport.Dimension;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -49,7 +49,7 @@ public class SwingImageDisplay extends JPanel implements ImageDisplay {
         for (Paint paint : paints){
             checkGallery(paint);
             bitmap = images.get(paint.id());
-            Viewport viewport = new Viewport(new Dimension(this.getWidth(), this.getHeight()));;
+            Viewport viewport = new Viewport(new Dimension(this.getWidth(), this.getHeight()));
             Dimension fitted = viewport.resize(new Dimension(bitmap.getWidth(), bitmap.getHeight()));
             int x =  ((this.getWidth() - fitted.width())/2);
             int y = ((this.getHeight() - fitted.height())/2);

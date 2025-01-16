@@ -1,6 +1,6 @@
-package control;
+package software.ulpgc.imageviewer.control;
 
-import view.ImagePresenter;
+import software.ulpgc.imageviewer.presenter.ImagePresenter;
 
 public class NextImageCommand implements Command {
     private final ImagePresenter imagePresenter;

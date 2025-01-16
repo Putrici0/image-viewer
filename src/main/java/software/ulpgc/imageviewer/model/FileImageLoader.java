@@ -1,4 +1,4 @@
-package model;
+package software.ulpgc.imageviewer.model;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -13,7 +13,7 @@ public class FileImageLoader implements ImageLoader{
 
     private static final Set<String> imageExtensions = Set.of(".jpg", ".png");
     private static FilenameFilter isImage() {
-        return (dir, name) -> imageExtensions.stream().anyMatch(suffix -> name.endsWith(suffix));
+        return (dir, name) -> imageExtensions.stream().anyMatch(name::endsWith);
     }
 
     @Override
@@ -32,11 +32,13 @@ public class FileImageLoader implements ImageLoader{
 
             @Override
             public Image next(){
+                assert files != null;
                 return imageAt((i+1)% files.length);
             }
 
             @Override
             public Image prev(){
+                assert files != null;
                 return imageAt((i-1+ files.length)% files.length);
             }
 

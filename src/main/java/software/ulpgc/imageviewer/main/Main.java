@@ -1,11 +1,11 @@
-package main;
+package software.ulpgc.imageviewer.main;
 
-import control.NextImageCommand;
-import control.PreviousImageCommand;
-import model.FileImageLoader;
-import model.Image;
-import view.ImagePresenter;
-import view.MainFrame;
+import software.ulpgc.imageviewer.control.NextImageCommand;
+import software.ulpgc.imageviewer.control.PreviousImageCommand;
+import software.ulpgc.imageviewer.model.FileImageLoader;
+import software.ulpgc.imageviewer.model.Image;
+import software.ulpgc.imageviewer.presenter.ImagePresenter;
+import software.ulpgc.imageviewer.view.MainFrame;
 
 import java.io.File;
 

@@ -1,6 +1,6 @@
-package view;
+package software.ulpgc.imageviewer.view;
 
-import model.Image;
+import software.ulpgc.imageviewer.model.Image;
 
 public interface ImageDisplay {
     void on(Released released);

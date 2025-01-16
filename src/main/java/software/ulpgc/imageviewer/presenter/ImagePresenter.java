@@ -1,6 +1,7 @@
-package view;
+package software.ulpgc.imageviewer.presenter;
 
-import model.Image;
+import software.ulpgc.imageviewer.model.Image;
+import software.ulpgc.imageviewer.view.ImageDisplay;
 
 public class ImagePresenter {
     private final ImageDisplay display;
@@ -8,8 +9,8 @@ public class ImagePresenter {
 
     public ImagePresenter(ImageDisplay imageDisplay){
         this.display = imageDisplay;
-        this.display.on((ImageDisplay.Shift) offset1 -> shift(offset1));
-        this.display.on((ImageDisplay.Released) offset -> released(offset));
+        this.display.on((ImageDisplay.Shift) this::shift);
+        this.display.on((ImageDisplay.Released) this::released);
     }
 
     private void repaint(){

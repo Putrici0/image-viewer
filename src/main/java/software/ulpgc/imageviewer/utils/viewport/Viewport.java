@@ -1,4 +1,4 @@
-package utils.viewport;
+package software.ulpgc.imageviewer.utils.viewport;
 
 public class Viewport {
     private final Dimension containerSize;
