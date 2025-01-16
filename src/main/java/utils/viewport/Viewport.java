@@ -1,3 +1,5 @@
+package utils.viewport;
+
 public class Viewport {
     private final Dimension containerSize;
     private Dimension imageSize;
