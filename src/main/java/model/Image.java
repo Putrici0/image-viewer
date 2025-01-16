@@ -1,3 +1,5 @@
+package model;
+
 public interface Image {
     Image prev();
     Image next();
