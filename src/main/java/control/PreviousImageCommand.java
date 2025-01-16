@@ -1,3 +1,5 @@
+package control;
+
 public class PreviousImageCommand implements Command {
     private final ImagePresenter imagePresenter;
 
