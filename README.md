@@ -12,12 +12,12 @@ El código está diseñado siguiendo principios de **Diseño Orientado a Objetos
 
 El proyecto se organiza en los siguientes paquetes:
 
-1. **control**: Contiene la lógica de control de comandos ("Next" y "Previous").
-2. **model**: Maneja la representación de las imágenes y la carga desde un directorio.
-3. **presenter**: Coordina la interacción entre el modelo y la vista para el apartado de **MVP**.
-4. **view**: Define la interfaz gráfica de usuario.
-5. **main**: Contiene el punto de entrada principal de la aplicación.
-6. **utils.viewport**: Ofrece funcionalidades para ajustar el tamaño de las imágenes al contenedor.
+- **Controlador** (`control`): Contiene la lógica de control de comandos ("Next" y "Previous").
+- **Modelo** (`model`): Maneja la representación de las imágenes y la carga desde un directorio.
+- **Presenter** (`presenter`): Coordina la interacción entre el modelo y la vista para el apartado de **MVP**.
+- **Vista** (`view`): Define la interfaz gráfica de usuario.
+- **Main** (`main`): Contiene el punto de entrada principal de la aplicación.
+- **Viewport** (`utils.viewport`): Ofrece funcionalidades para ajustar el tamaño de las imágenes al contenedor.
 
 ## Características
 
